@@ -6,7 +6,19 @@
   --text: #1f2937; /* Gray-800 */
   --gradient: linear-gradient(135deg, #4f46e5, #10b981);
 }
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("bgImage");
+  background-image: url("./images/solide2.png");
+  background-position: center calc(40%);
+  background-attachment: fixed;
 
+  height: 100vh;
+}
 .button {
   padding: 0.75rem 1.5rem;
   border-radius: 8px;

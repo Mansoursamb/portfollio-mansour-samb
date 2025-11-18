@@ -1,3 +1,16 @@
+import profilePic from "./profile.jpg";
+export const profile = {
+  name: "Mansour Samb",
+  title: "Full Stack Developer",
+  bio: "Développeur passionné avec une expertise en React, Node.js et bases de données.",
+  profileImage: profilePic,
+  contact: {
+    email: "mansour_samb@yahoo.com",
+    phone: "+33 644785877",
+    location: "Toulouse, France",
+  },
+};
+
 export const projects = [
   {
     title: "Landing Page Crypto",

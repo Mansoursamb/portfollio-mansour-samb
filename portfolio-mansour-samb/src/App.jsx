@@ -1,7 +1,13 @@
+import { StrictMode } from "react";
+import "./index.css";
+import { Route, Router, Routes } from "react-router-dom";
+import Home from "./pages/Home.jsx";
 function App() {
   return (
     <>
-      <h1>Bienvenu dans le portfoilio de mans</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
