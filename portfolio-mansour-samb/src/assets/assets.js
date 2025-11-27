@@ -1,9 +1,11 @@
 import profilePic from "./profile.jpg";
+import avatar from "./viel homme.png.png";
 export const profile = {
   name: "Mansour Samb",
   title: "Full Stack Developer",
   bio: "Développeur passionné avec une expertise en React, Node.js et bases de données.",
   profileImage: profilePic,
+  avatar: avatar,
   contact: {
     email: "mansour_samb@yahoo.com",
     phone: "+33 644785877",

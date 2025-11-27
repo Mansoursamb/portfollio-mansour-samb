@@ -1,29 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import { IoIosMenu } from "react-icons/io";
 function Nav() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="nav">
       <div className="logo">
-        <div class="alif"></div>
-        <span class="ba"></span>
+        <div className="alif"></div>
+        <span className="ba"></span>
       </div>
-      <div className="links">
+      <div id="nav-links" className={`links ${open ? "open" : ""}`}>
         <ul>
-          <Link>
-            <li>Home</li>
-          </Link>
-          <Link>
-            <li>About</li>
-          </Link>
-          <Link>
-            <li>Portfolio</li>
-          </Link>
-          <Link>
-            <li>Contact</li>
-          </Link>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/">Home</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/about">About</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
+      {/* Hamburger for small screens */}
+      <button
+        className="hamburger"
+        aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+        aria-expanded={open}
+        aria-controls="nav-links"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <IoIosMenu />
+      </button>
+
+      <button className="button">Contactez moi</button>
     </div>
   );
 }

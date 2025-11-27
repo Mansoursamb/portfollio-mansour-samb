@@ -1,0 +1,12 @@
+.about {
+  padding: 40px 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.about p {
+  color: var(--tertiary);
+}

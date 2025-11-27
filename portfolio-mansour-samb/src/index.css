@@ -1,38 +1,60 @@
 :root {
   --primary: #4f46e5; /* Indigo */
   --secondary: #f59e0b; /* Amber */
+  --tertiary: #9287a3; /* light blue */
   --accent: #10b981; /* Emerald */
   --background: #f3f4f6; /* Gray-100 */
   --text: #1f2937; /* Gray-800 */
   --gradient: linear-gradient(135deg, #4f46e5, #10b981);
+
+  --icon-react: url("https://react-icons.github.io/react-icons/icons?name=react");
+  --icon-nodejs: url("https://react-icons.github.io/react-icons/icons?name=nodejs");
+  --icon-tailwind: url("https://react-icons.github.io/react-icons/icons?name=tailwindcss");
+  --icon-mongodb: url("https://react-icons.github.io/react-icons/icons?name=mongodb");
+  --icon-css3: url("https://react-icons.github.io/react-icons/icons?name=css3");
+  --icon-bootstrap: url("https://react-icons.github.io/react-icons/icons?name=bootstrap");
+  --icon-express: url("https://react-icons.github.io/react-icons/icons?name=express");
+  --icon-firebase: url("https://react-icons.github.io/react-icons/icons?name=firebase");
+  --icon-graphql: url("https://react-icons.github.io/react-icons/icons?name=graphql");
+  --icon-chartjs: url("https://react-icons.github.io/react-icons/icons?name=chartjs");
 }
+
 body {
   background-color: var(--background);
   color: var(--text);
   font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("bgImage");
   background-image: url("./images/solide2.png");
-  background-position: center calc(40%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
-
-  height: 100vh;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 .button {
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   background: var(--gradient);
-  color: white;
+  color: greenyellow;
   font-weight: bold;
   transition: transform 0.2s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 20px;
 }
 .button:hover {
   transform: scale(1.05);
 }
 
 .card {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   background: white;
 }
@@ -49,4 +71,11 @@ body {
 }
 .fadeInUp {
   animation: fadeInUp 0.6s ease-out;
+}
+@media screen and (max-width: 600px) {
+  .button {
+    width: 40%;
+    box-sizing: border-box;
+    margin-right: 0;
+  }
 }
