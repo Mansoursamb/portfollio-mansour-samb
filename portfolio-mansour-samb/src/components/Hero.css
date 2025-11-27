@@ -1,0 +1,57 @@
+/* Basic hero section styles */
+.hero {
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.icons-grid {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 80px;
+}
+
+.tech-icon,
+.tech-img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 8px;
+}
+
+.tech-img {
+  object-fit: contain;
+}
+
+.tech-svg {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  /* color intentionally not forced here so inline styles can set brand colors */
+  transition: transform 0.14s ease;
+  fill: currentColor; /* ensure svg paths respect the color property */
+}
+
+.tech-svg:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+}
+
+.tech-name {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: var(--text);
+}

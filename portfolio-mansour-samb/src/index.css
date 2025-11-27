@@ -7,16 +7,8 @@
   --text: #1f2937; /* Gray-800 */
   --gradient: linear-gradient(135deg, #4f46e5, #10b981);
 
-  --icon-react: url("https://react-icons.github.io/react-icons/icons?name=react");
-  --icon-nodejs: url("https://react-icons.github.io/react-icons/icons?name=nodejs");
-  --icon-tailwind: url("https://react-icons.github.io/react-icons/icons?name=tailwindcss");
-  --icon-mongodb: url("https://react-icons.github.io/react-icons/icons?name=mongodb");
-  --icon-css3: url("https://react-icons.github.io/react-icons/icons?name=css3");
-  --icon-bootstrap: url("https://react-icons.github.io/react-icons/icons?name=bootstrap");
-  --icon-express: url("https://react-icons.github.io/react-icons/icons?name=express");
-  --icon-firebase: url("https://react-icons.github.io/react-icons/icons?name=firebase");
-  --icon-graphql: url("https://react-icons.github.io/react-icons/icons?name=graphql");
-  --icon-chartjs: url("https://react-icons.github.io/react-icons/icons?name=chartjs");
+  /* --icon-* variables removed: icons are rendered via react-icons in Hero.jsx */
+  --nav-height: 80px; /* default fixed nav height to allow sections to offset */
 }
 
 body {
@@ -79,3 +71,5 @@ img {
     margin-right: 0;
   }
 }
+
+/* Global override removed: About sections are styled by their component-specific CSS. */

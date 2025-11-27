@@ -32,6 +32,7 @@
   background-color: #05f8a7f3;
   border-radius: 50%;
   position: relative;
+  margin-bottom: 30px; /* space between nav and the next section */
   margin-left: -6px;
   top: 10px;
 }
@@ -40,7 +41,15 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
-  position: relative; /* needed for absolute positioning of opened menu */
+  position: relative;
+  /* needed for absolute positioning of opened menu */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  --nav-height: 80px; /* used by sections to offset content under fixed nav */
+  min-height: var(--nav-height);
 }
 .hamburger {
   display: none; /* visible only on small screens */

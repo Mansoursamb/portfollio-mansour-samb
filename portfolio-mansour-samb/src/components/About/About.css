@@ -1,12 +1,67 @@
 .about {
-  padding: 40px 24px;
-  max-width: 960px;
+  padding: calc(var(--nav-height, 80px) + 30px) 24px 40px 24px; /* offset the fixed nav + 30px spacing */
+  max-width: 1400px; /* allows 500px image + text to display side-by-side */
   margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 .about h2 {
-  font-size: 28px;
+  font-size: 50px;
   margin-bottom: 8px;
 }
 .about p {
   color: var(--tertiary);
+  font-size: 50px;
+}
+.about > div {
+  flex: 1 1 auto; /* the text/content grows/shrinks, image remains fixed */
+}
+.about .avatar-image {
+  display: block;
+  width: 500px; /* keep the avatar at 500px on large screens */
+  height: 500px;
+  flex: 0 0 500px; /* prevent the image from shrinking */
+  min-width: 500px; /* ensure it doesn't go below this width */
+  max-width: 100%; /* never overflow its container */
+  object-fit: cover; /* crop to fill while maintaining aspect ratio */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* Responsive: stack columns under 1200px, scale image
+   Keep the 500px size on large screens, smaller on smaller screens */
+@media screen and (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .about .avatar-image {
+    width: 220px;
+    height: 220px;
+    flex: 0 0 220px;
+    min-width: 220px;
+  }
+  .about > div {
+    flex: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .about .avatar-image {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px;
+    min-width: 100px;
+  }
+  .about > div {
+    flex: none;
+  }
 }
