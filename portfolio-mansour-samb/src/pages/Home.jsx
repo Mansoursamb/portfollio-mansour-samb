@@ -4,6 +4,8 @@ import About from "../components/About/About.jsx";
 import Hero from "../components/Hero.jsx";
 import Portfolio from "../components/Portfolio/Portfolio.jsx";
 import Contact from "../components/Contacts/Contacts.jsx";
+import { Footer } from "../components/Footer/Footer.jsx";
+import { Skills } from "../components/Skills/Skills.jsx";
 
 function Home() {
   return (
@@ -12,7 +14,9 @@ function Home() {
       <About />
       <Hero />
       <Portfolio />
+      <Skills />
       <Contact />
+      <Footer />
     </main>
   );
 }
