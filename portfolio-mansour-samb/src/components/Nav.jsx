@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Nav.css";
-import { Link } from "react-router-dom";
+// Using anchor links for single-page navigation
 import { IoIosMenu } from "react-icons/io";
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -13,16 +13,19 @@ function Nav() {
       <div id="nav-links" className={`links ${open ? "open" : ""}`}>
         <ul>
           <li onClick={() => setOpen(false)}>
-            <Link to="/">Home</Link>
+            <a href="#home">Home</a>
           </li>
           <li onClick={() => setOpen(false)}>
-            <Link to="/about">About</Link>
+            <a href="#about">About</a>
           </li>
           <li onClick={() => setOpen(false)}>
-            <Link to="/portfolio">Portfolio</Link>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li onClick={() => setOpen(false)}>
-            <Link to="/contact">Contact</Link>
+            <a href="#skills">Skills</a>
+          </li>
+          <li onClick={() => setOpen(false)}>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -37,7 +40,9 @@ function Nav() {
         <IoIosMenu />
       </button>
 
-      <button className="button">Contactez moi</button>
+      <a className="button" href="#contact">
+        Contactez moi
+      </a>
     </div>
   );
 }

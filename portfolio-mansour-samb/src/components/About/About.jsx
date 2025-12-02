@@ -3,6 +3,7 @@ import "./About.css";
 import avatar from "../../assets/viel homme.png.png";
 
 const About = () => {
+  console.log("About render", new Date().toISOString());
   return (
     <section className="about" id="about">
       <div>

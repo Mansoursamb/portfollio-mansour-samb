@@ -2,6 +2,7 @@ import React from "react";
 import "./Contacts.css";
 
 const Contact = () => {
+  console.log("Contact render", new Date().toISOString());
   return (
     <section className="contact" id="contact">
       <h2>Contact</h2>

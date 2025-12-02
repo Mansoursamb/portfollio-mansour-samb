@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter as Router, BrowserRouter } from "react-router-dom";
+// Routes and page components are rendered inside App
+// No router needed for single-page anchor navigation
 import App from "./App";
+import Nav from "./components/Nav.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <>
+    <Nav />
     <App />
-  </BrowserRouter>
+    <Footer />
+  </>
 );

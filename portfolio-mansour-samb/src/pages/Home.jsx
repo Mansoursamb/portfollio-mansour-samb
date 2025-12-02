@@ -1,24 +1,13 @@
+import React from "react";
 import "./Home.css";
-import Nav from "../components/Nav.jsx";
-import About from "../components/About/About.jsx";
 import Hero from "../components/Hero.jsx";
-import Portfolio from "../components/Portfolio/Portfolio.jsx";
-import Contact from "../components/Contacts/Contacts.jsx";
-import { Footer } from "../components/Footer/Footer.jsx";
-import { Skills } from "../components/Skills/Skills.jsx";
-
-function Home() {
+const Home = () => {
+  console.log("Home render", new Date().toISOString());
   return (
-    <main className="home">
-      <Nav />
-      <About />
+    <section className="home-section" id="home">
       <Hero />
-      <Portfolio />
-      <Skills />
-      <Contact />
-      <Footer />
-    </main>
+    </section>
   );
-}
+};
 
 export default Home;

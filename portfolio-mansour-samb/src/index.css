@@ -24,6 +24,16 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
 }
+html {
+  scroll-behavior: smooth;
+  /* Ensure anchor links account for fixed nav height */
+  scroll-padding-top: var(--nav-height);
+}
+
+section {
+  /* When jumping to anchors, ensure section top isn't hidden behind fixed nav */
+  scroll-margin-top: calc(var(--nav-height) + 20px);
+}
 img {
   max-width: 100%;
   height: auto;

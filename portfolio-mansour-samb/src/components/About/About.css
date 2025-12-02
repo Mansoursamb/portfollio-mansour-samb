@@ -39,10 +39,10 @@
     gap: 24px;
   }
   .about .avatar-image {
-    width: 220px;
-    height: 220px;
-    flex: 0 0 220px;
-    min-width: 220px;
+    width: 350px;
+    height: 350px;
+    flex: 0 0 350px;
+    min-width: 350px;
   }
   .about > div {
     flex: none;
@@ -56,10 +56,10 @@
     gap: 16px;
   }
   .about .avatar-image {
-    width: 100px;
-    height: 100px;
-    flex: 0 0 100px;
-    min-width: 100px;
+    width: 200px;
+    height: 200px;
+    flex: 0 0 200px;
+    min-width: 200px;
   }
   .about > div {
     flex: none;
