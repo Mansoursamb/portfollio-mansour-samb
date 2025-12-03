@@ -28,7 +28,7 @@
   object-fit: cover; /* crop to fill while maintaining aspect ratio */
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 /* Responsive: stack columns under 1200px, scale image
    Keep the 500px size on large screens, smaller on smaller screens */

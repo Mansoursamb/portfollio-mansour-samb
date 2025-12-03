@@ -40,7 +40,7 @@ function Nav() {
         <IoIosMenu />
       </button>
 
-      <a className="button" href="#contact">
+      <a className="button__contact" href="#contact">
         Contactez moi
       </a>
     </div>

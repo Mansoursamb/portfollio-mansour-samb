@@ -34,7 +34,7 @@
   position: relative;
   margin-bottom: 30px; /* space between nav and the next section */
   margin-left: -6px;
-  top: 10px;
+  top: 24px;
 }
 .nav {
   display: flex;
@@ -58,8 +58,8 @@
   cursor: pointer;
   padding: 8px;
   margin-left: 12px;
-  color: var(--text);
-  font-size: 24px;
+  color: white;
+  font-size: 30px;
 }
 .hamburger:focus {
   outline: 2px solid var(--primary);
@@ -79,6 +79,18 @@
   margin-top: 40px;
   width: 400px;
 }
+.button__contact {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background: var(--gradient);
+  color: #05f8a7f3;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 20px;
+}
 
 a {
   text-decoration: none;
@@ -87,7 +99,7 @@ a {
   font-size: 18px;
 }
 a:hover {
-  color: var(--background);
+  color: grey;
 }
 
 @media screen and (max-width: 1024px) {
@@ -128,5 +140,8 @@ a:hover {
   }
   .links.open ul li {
     padding: 8px 12px;
+  }
+  .nav {
+    padding-right: 10px; /* space for hamburger */
   }
 }
