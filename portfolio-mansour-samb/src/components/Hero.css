@@ -2,6 +2,12 @@
 .hero {
   padding: 48px 24px;
   text-align: center;
+  /* Background to improve visibility over the page background image */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  margin: 12px auto;
+  max-width: 1100px;
 }
 
 .icons-grid {

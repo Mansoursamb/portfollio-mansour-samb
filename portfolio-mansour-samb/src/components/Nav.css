@@ -32,9 +32,9 @@
   background-color: #05f8a7f3;
   border-radius: 50%;
   position: relative;
-  margin-bottom: 30px; /* space between nav and the next section */
+
   margin-left: -6px;
-  top: 24px;
+  top: 9px;
 }
 .nav {
   display: flex;
@@ -50,6 +50,33 @@
   left: 0;
   --nav-height: 80px; /* used by sections to offset content under fixed nav */
   min-height: var(--nav-height);
+  margin-bottom: 0;
+  z-index: 1100; /* ensure nav stays above content */
+  background: rgba(87, 73, 73, 0.85);
+  backdrop-filter: blur(10px);
+}
+.links ul li a {
+  color: #b1ddccf3;
+}
+.links ul li a:hover {
+  color: grey;
+}
+.links ul li a.active,
+.links ul li a[aria-current="true"] {
+  color: var(--primary);
+  position: relative;
+  font-weight: 800;
+}
+.links ul li a.active::after,
+.links ul li a[aria-current="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 4px;
 }
 .hamburger {
   display: none; /* visible only on small screens */
@@ -60,6 +87,9 @@
   margin-left: 12px;
   color: white;
   font-size: 30px;
+}
+.hamburger:hover {
+  color: var(--primary);
 }
 .hamburger:focus {
   outline: 2px solid var(--primary);
@@ -72,8 +102,9 @@
   justify-content: center;
   list-style-type: none;
   text-decoration: none;
-  border: 1px solid #05f8a7f3;
+  border: 1px solid #afdbccf3;
   padding: 20px;
+
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-top: 40px;

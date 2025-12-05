@@ -48,7 +48,7 @@ const Hero = () => {
 
   return (
     <section className="hero">
-      <h1>Hero</h1>
+      <h2>Technologies</h2>
       <p>Icônes des technologies — rendues avec react-icons (SVG)</p>
       <div className="icons-grid">
         {ICONS.map(({ name, component }) => {

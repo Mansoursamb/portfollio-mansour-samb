@@ -1,11 +1,12 @@
 import React from "react";
 import "./Home.css";
-import Hero from "../components/Hero.jsx";
+
+import Nav from "../components/Nav.jsx";
 const Home = () => {
   console.log("Home render", new Date().toISOString());
   return (
     <section className="home-section" id="home">
-      <Hero />
+      <Nav />
     </section>
   );
 };
