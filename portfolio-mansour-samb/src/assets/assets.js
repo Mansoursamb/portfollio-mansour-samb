@@ -1,3 +1,15 @@
+// Import react-icons for courses
+import {
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiDocker,
+  SiGit,
+} from "react-icons/si";
+import { FaMicrosoft } from "react-icons/fa";
+
 import avatar from "./viel homme.png.png";
 import profilePic from "../images/profile-placeholder.svg";
 import bcg1 from "../images/bcg1.jpg";
@@ -182,8 +194,115 @@ export const socialLinks = {
 };
 
 export const courses = [
-  { name: "React Avancé", hours: 40 },
-  { name: "Node.js API", hours: 30 },
-  { name: "MongoDB & Mongoose", hours: 25 },
-  { name: "UI/UX Design", hours: 20 },
+  {
+    id: 1,
+    projectTitle: "Projet 1: Bureautique",
+    courses: [
+      {
+        name: "Introduction à la bureautique",
+        description:
+          "Maîtrise de Word, Excel et PowerPoint pour la gestion documentaire professionnelle.",
+        icon: FaMicrosoft,
+        duration: "40 hours",
+      },
+      {
+        name: "Création de documents avec Word",
+        description:
+          "Mise en place de documents texte professionnels, mise en forme avancée et styles.",
+        icon: FaMicrosoft,
+        duration: "10 hours",
+      },
+    ],
+  },
+  {
+    id: 2,
+    projectTitle: "Projet 2: HTML & CSS",
+    courses: [
+      {
+        name: "Création de site Nina Carducci",
+        description:
+          "Conception et optimisation SEO d'un site e-commerce avec structure sémantique HTML5.",
+        icon: SiHtml5,
+        duration: "40 hours",
+      },
+    ],
+  },
+  {
+    id: 3,
+    projectTitle: "Projet 3: JavaScript",
+    courses: [
+      {
+        name: "Introduction à la programmation",
+        description:
+          "Fondamentaux du JavaScript, DOM manipulation et ES6+ pour interactivité web.",
+        icon: SiJavascript,
+        duration: "40 hours",
+      },
+    ],
+  },
+  {
+    id: 4,
+    projectTitle: "Projet 4: React Avancé",
+    courses: [
+      {
+        name: "Développement d'applications SPA",
+        description:
+          "Composants, hooks, state management et patterns avancés en React.",
+        icon: SiReact,
+        duration: "40 hours",
+      },
+    ],
+  },
+  {
+    id: 5,
+    projectTitle: "Projet 5: Node.js API",
+    courses: [
+      {
+        name: "Création d'API RESTful",
+        description:
+          "Serveurs backend robustes, gestion des requêtes et middlewares avec Express.",
+        icon: SiNodedotjs,
+        duration: "30 hours",
+      },
+    ],
+  },
+  {
+    id: 6,
+    projectTitle: "Projet 6: MongoDB & Mongoose",
+    courses: [
+      {
+        name: "Bases de données NoSQL",
+        description:
+          "Schémas flexibles, requêtes complexes et optimisation avec MongoDB.",
+        icon: SiMongodb,
+        duration: "25 hours",
+      },
+    ],
+  },
+  {
+    id: 7,
+    projectTitle: "Projet 7: Docker",
+    courses: [
+      {
+        name: "Containerisation et déploiement",
+        description:
+          "Création d'images Docker, orchestration et CI/CD pour applications.",
+        icon: SiDocker,
+        duration: "20 hours",
+      },
+    ],
+  },
+  {
+    id: 8,
+    projectTitle: "Projet 8: Git & GitHub",
+    courses: [
+      {
+        name: "Versioning et collaboration",
+        description:
+          "Maîtrise du contrôle de version, branching, pull requests et workflows collaboratifs.",
+        icon: SiGit,
+        duration: "15 hours",
+      },
+    ],
+  },
 ];

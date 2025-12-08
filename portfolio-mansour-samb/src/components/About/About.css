@@ -55,6 +55,8 @@
     flex-direction: column;
     text-align: center;
     gap: 16px;
+    margin: 0;
+    padding: 30px 16px 40px 16px; /* reduce horizontal padding */
   }
   .about .avatar-image {
     width: 200px;
@@ -64,5 +66,27 @@
   }
   .about > div {
     flex: none;
+  }
+  .about h2 {
+    display: none;
+  }
+  .about p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 296px) {
+  .about {
+    padding: 12px 8px;
+    gap: 12px;
+  }
+  .about .avatar-image {
+    width: 140px;
+    height: 140px;
+    flex: 0 0 140px;
+    min-width: 140px;
+  }
+  .about p {
+    font-size: 16px;
   }
 }

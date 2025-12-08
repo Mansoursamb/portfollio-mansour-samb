@@ -48,7 +48,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  --nav-height: 80px; /* used by sections to offset content under fixed nav */
+  --nav-height: 60px; /* used by sections to offset content under fixed nav */
   min-height: var(--nav-height);
   margin-bottom: 0;
   z-index: 1100; /* ensure nav stays above content */
@@ -134,6 +134,10 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  .logo {
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
   .links ul {
     display: none;
   }
@@ -174,5 +178,10 @@ a:hover {
   }
   .nav {
     padding-right: 10px; /* space for hamburger */
+    text-align: center;
+  }
+  .button__contact {
+    padding: 0.5rem 0.75rem;
+    font-size: 12px;
   }
 }

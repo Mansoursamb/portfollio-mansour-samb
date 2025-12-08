@@ -59,11 +59,11 @@ Conclusion courte  ;  add classlist: local*/
           </li>
           <li onClick={() => setOpen(false)}>
             <a
-              href="#skills"
+              href="#courses"
               className={active === "skills" ? "active" : ""}
               onClick={() => setActive("skills")}
             >
-              Skills
+              Courses
             </a>
           </li>
           <li onClick={() => setOpen(false)}>

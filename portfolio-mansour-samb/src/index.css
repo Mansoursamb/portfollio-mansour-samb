@@ -7,8 +7,7 @@
   --text: #1f2937; /* Gray-800 */
   --gradient: linear-gradient(135deg, #4f46e5, #10b981);
 
-  /* --icon-* variables removed: icons are rendered via react-icons in Hero.jsx */
-  --nav-height: 80px; /* default fixed nav height to allow sections to offset */
+  --nav-height: 50px; /* default fixed nav height to allow sections to offset */
 }
 
 body {
@@ -76,9 +75,15 @@ img {
 }
 @media screen and (max-width: 600px) {
   .button {
-    width: 40%;
+    width: 100%;
     box-sizing: border-box;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 296px) {
+  body {
+    overflow-x: hidden;
   }
 }
 
