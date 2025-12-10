@@ -29,9 +29,9 @@ export const Courses = () => {
           modules={[Navigation]}
           navigation
           spaceBetween={20}
-          slidesPerView={1}
+          slidesPerView={3}
           breakpoints={{
-            200: { slidesPerView: 1, spaceBetween: 10 },
+            200: { slidesPerView: 1, spaceBetween: 0 },
             768: { slidesPerView: 2, spaceBetween: 15 },
             1024: { slidesPerView: 3, spaceBetween: 20 },
           }}

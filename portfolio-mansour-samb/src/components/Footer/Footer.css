@@ -1,4 +1,4 @@
-.footer {
+.footer-container {
   background: rgba(87, 73, 73, 0.85);
   backdrop-filter: blur(10px);
   padding: 20px;
@@ -6,4 +6,9 @@
   font-size: 14px;
   color: white;
   height: 150px;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+  }
 }

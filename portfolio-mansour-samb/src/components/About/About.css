@@ -52,8 +52,9 @@
 
 @media screen and (max-width: 768px) {
   .about {
+    width: 80%;
     flex-direction: column;
-    text-align: center;
+    margin-left: auto;
     gap: 16px;
     margin: 0;
     padding: 30px 16px 40px 16px; /* reduce horizontal padding */

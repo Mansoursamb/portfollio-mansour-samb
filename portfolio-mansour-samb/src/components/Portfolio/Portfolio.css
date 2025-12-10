@@ -89,6 +89,10 @@
   .project-image {
     height: 160px;
   }
+  .portfolio {
+    max-width: 100%;
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 420px) {
