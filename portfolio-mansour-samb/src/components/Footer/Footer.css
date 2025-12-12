@@ -6,6 +6,7 @@
   font-size: 14px;
   color: white;
   height: 150px;
+  max-width: 1400px;
 }
 @media (max-width: 768px) {
   .footer-container {

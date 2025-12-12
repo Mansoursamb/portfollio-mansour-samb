@@ -81,7 +81,7 @@ export const Courses = () => {
                     <span className="course-duration">{course.duration}</span>
                   </div>
                   <p className="course-description">{course.description}</p>
-                  <CircularProgress duration={course.duration} />
+                  <CircularProgress completion={course.completion} />
                 </div>
               ))}
             </div>
