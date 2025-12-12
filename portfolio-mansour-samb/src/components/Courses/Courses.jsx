@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import CircularProgress from "../CirculaProgress/CircularProgress";
 import {
   SiHtml5,
   SiJavascript,
@@ -22,7 +23,7 @@ export const Courses = () => {
   return (
     <section className="courses" id="courses">
       <h2>Mes Compétences</h2>
-      <p>Les projets et formations que j'ai complétés</p>
+      <p>Les projets et Cours que j'ai suivi</p>
 
       <div className="swiper-container">
         <Swiper
@@ -80,6 +81,7 @@ export const Courses = () => {
                     <span className="course-duration">{course.duration}</span>
                   </div>
                   <p className="course-description">{course.description}</p>
+                  <CircularProgress duration={course.duration} />
                 </div>
               ))}
             </div>

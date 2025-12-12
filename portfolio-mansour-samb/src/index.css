@@ -23,6 +23,7 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   object-fit: cover;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;

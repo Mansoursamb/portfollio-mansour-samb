@@ -21,6 +21,8 @@
   padding: 40px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  max-width: 1200px;
+  margin: 0 auto 80px;
 }
 
 .contact__left {
@@ -33,6 +35,7 @@
 .contact__left h2 {
   margin: 0 0 10px;
   font-size: 28px;
+  color: var(--primary-2);
 }
 .contact__left p {
   color: var(--muted);

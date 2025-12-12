@@ -24,6 +24,7 @@ import bcg9 from "../images/bcg9.jpg";
 import bcg10 from "../images/bcg10.jpg";
 import bcg11 from "../images/bcg11.jpg";
 import bcg12 from "../images/bcg12.jpg";
+
 export const profile = {
   name: "Mansour Samb",
   title: "Full Stack Developer",
