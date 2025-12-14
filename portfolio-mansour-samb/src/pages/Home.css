@@ -1,7 +1,1 @@
-.home-section {
-  /* offset the fixed nav + spacing only for first load */
-  padding-top: calc(var(--nav-height, 80px) + 20px);
-  padding: 20px 24px 48px 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+

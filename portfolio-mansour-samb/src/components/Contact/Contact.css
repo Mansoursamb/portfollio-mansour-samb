@@ -1,6 +1,6 @@
 :root {
-  --bg: #0b1021;
-  --panel: #111737;
+  --bg: #2f3e6e;
+  --panel: #7a81ad;
 
   --muted: #aab1d6;
   --primary: #4f46e5;
@@ -21,8 +21,8 @@
   padding: 40px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  max-width: 1300px;
-  margin: 0 auto 80px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .contact__left {
@@ -160,9 +160,21 @@
 }
 @media (max-width: 768px) {
   .contact {
-    width: 80%;
-
+    max-width: 80%;
     margin-left: auto;
+  }
+  .contact__right {
+    max-width: 100%;
+  }
+  .contact__left {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact {
+    max-width: 100%;
+    margin-left: 20px auto;
+    padding: 20px;
   }
   .contact__right {
     max-width: 100%;

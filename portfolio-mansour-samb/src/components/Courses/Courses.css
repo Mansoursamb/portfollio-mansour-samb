@@ -1,6 +1,10 @@
 .courses {
-  max-width: 1300px;
+  max-width: 95%;
   margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .courses h2 {
@@ -8,7 +12,6 @@
   font-size: 2rem;
   letter-spacing: 10px;
   font-weight: 600;
-  color: black;
 }
 
 .courses > p {
@@ -53,7 +56,7 @@
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  text-align: center;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,6 +64,7 @@
   width: 100%;
   max-width: 280px;
   margin: 0 auto;
+  height: auto;
 }
 
 .course-card:hover {
@@ -88,8 +92,7 @@
 .course-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 8px;
+  color: var(--primary-2);
 }
 
 .course-count {
@@ -118,8 +121,7 @@
 /* Swiper Navigation Arrows */
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--primary);
-  background: rgba(74, 144, 226, 0.1);
+  background: rgba(199, 35, 43, 0.1);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -273,6 +275,12 @@
 }
 
 @media screen and (max-width: 420px) {
+  .courses {
+    padding: calc(var(--nav-height) + 16px) 16px 16px;
+    max-width: 100%;
+    margin-left: 25px;
+    padding: 0;
+  }
   .courses h2 {
     font-size: 1.4rem;
   }
@@ -333,7 +341,8 @@
 }
 @media screen and (max-width: 296px) {
   .courses {
-    padding: calc(var(--nav-height) + 16px) 8px 16px;
+    padding: 0;
+    margin: 0;
     max-width: 100%;
   }
 
@@ -353,7 +362,7 @@
 
   .course-card {
     padding: 12px 8px;
-    max-width: 100%;
+    width: 100%;
     max-height: none;
   }
 

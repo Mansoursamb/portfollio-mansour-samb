@@ -13,6 +13,7 @@
   cursor: pointer;
   width: fit-content;
   height: fit-content;
+  background-color: aliceblue;
 }
 .logo:hover {
   transform: scale(1.1);
@@ -38,22 +39,22 @@
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding-right: 20px;
+  font-family: "Montserrat", sans-serif;
   padding-bottom: 20px;
   position: relative;
   /* needed for absolute positioning of opened menu */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   position: fixed;
+  max-width: 1400px;
   width: 100%;
   top: 0;
   left: 0;
   height: 70px; /* used by sections to offset content under fixed nav */
-  min-height: var(--nav-height);
-  margin-bottom: 0;
+
   z-index: 1100; /* ensure nav stays above content */
-  background: black;
+
   backdrop-filter: blur(10px);
 }
 .links ul li a {
@@ -114,6 +115,7 @@
 }
 .button__contact {
   padding: 0.75rem 1.5rem;
+  margin-right: 10px;
   border-radius: 8px;
   background: var(--gradient);
   color: #05f8a7f3;
