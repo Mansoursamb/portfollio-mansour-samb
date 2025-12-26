@@ -6,29 +6,40 @@
   --background: #f3f4f6; /* Gray-100 */
   --text: #1f2937; /* Gray-800 */
   --gradient: linear-gradient(135deg, #4f46e5, #10b981);
-
-  --nav-height: 50px; /* default fixed nav height to allow sections to offset */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0px;
-  scroll-behavior: none;
+  font-family: "Shrikhand", cursive;
   text-align: center;
+
   background-image: url("./images/solide2.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-attachment: fixed;
-  box-sizing: border-box;
-  height: 100vh;
-  font-family: "Shrikhand", cursive;
+
+  /* IMPORTANT : supprime ces deux lignes */
+  /* height: 100vh; */
+  /* max-width: 1470px; */
+
   overflow-x: hidden;
-  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* important sur html AUSSI */
+}
+
 html {
   scroll-behavior: smooth;
   /* Ensure anchor links account for fixed nav height */
@@ -40,8 +51,9 @@ main {
 }
 section {
   margin: 0 auto;
-
-  max-width: 1200px;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
 }
 
 img {
@@ -64,26 +76,6 @@ img {
 }
 .button:hover {
   transform: scale(1.05);
-}
-section {
-  padding: 0px;
-  margin: 0;
-}
-main {
-  max-width: 100%;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0 auto;
-}
-section {
-  max-width: 100%;
-}
-.card {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-  background: white;
 }
 
 @keyframes fadeInUp {

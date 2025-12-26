@@ -3,17 +3,17 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   background-color: transparent;
   border: 1px solid #05f8a7f3;
   padding: 3px 6px;
-  margin-left: 10px;
+  margin-left: 0;
   border-radius: 5px;
   cursor: pointer;
-  width: fit-content;
+
   height: fit-content;
-  background-color: aliceblue;
+  background-color: #b1ddccf3;
 }
 .logo:hover {
   transform: scale(1.1);
@@ -39,19 +39,21 @@
 }
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 20px; /* horizontal seulement */
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 20px;
+
   position: relative;
   /* needed for absolute positioning of opened menu */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  max-width: 1400px;
   width: 100%;
-  top: 0;
+  position: fixed;
   left: 0;
+  right: 0; /* important */
   height: 70px; /* used by sections to offset content under fixed nav */
+  max-width: 100vw; /* sécurité */
+  box-sizing: border-box; /* prend le padding dans la largeur */
 
   z-index: 1100; /* ensure nav stays above content */
 
@@ -100,18 +102,21 @@
 }
 .links ul {
   display: flex;
-  gap: 20px;
+
   align-items: center;
   justify-content: center;
   list-style-type: none;
   text-decoration: none;
   border: none;
-  padding: 20px;
-
   border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  margin-top: 40px;
-  width: 400px;
+  padding: 6px 12px;
+  gap: 16px;
+  max-width: calc(100% - 40px); /* sécurité */
+  overflow: visible; /* empêche le débordement */
+
+  width: auto;
+
+  margin-top: 0;
 }
 .button__contact {
   padding: 0.75rem 1.5rem;
@@ -124,7 +129,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   cursor: pointer;
-  margin-right: 20px;
+
   margin-top: 15px;
 }
 
