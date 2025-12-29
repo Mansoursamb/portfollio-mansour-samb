@@ -108,7 +108,7 @@
   .portfolio {
     padding: 12px 8px;
     border-radius: 0;
-    margin: 0;
+    margin: 0 auto;
   }
   .projects-grid {
     gap: 12px;

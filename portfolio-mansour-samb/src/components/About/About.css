@@ -42,7 +42,7 @@
   .about {
     flex-direction: column;
     text-align: center;
-    gap: 24px;
+    padding-top: 10px;
   }
   .about .avatar-image {
     width: 350px;
@@ -52,6 +52,14 @@
   }
   .about > div {
     flex: none;
+  }
+  .about p {
+    padding-bottom: O;
+    padding-top: O;
+    margin-bottom: 0;
+  }
+  .about h2 {
+    display: none;
   }
 }
 
@@ -83,7 +91,6 @@
 
 @media screen and (max-width: 296px) {
   .about {
-    padding: 12px 8px;
     gap: 12px;
   }
   .about .avatar-image {
@@ -94,5 +101,8 @@
   }
   .about p {
     font-size: 16px;
+  }
+  .about button {
+    width: auto;
   }
 }

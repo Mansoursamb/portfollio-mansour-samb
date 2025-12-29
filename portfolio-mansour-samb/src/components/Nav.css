@@ -109,7 +109,7 @@
   text-decoration: none;
   border: none;
   border-radius: 25px;
-  padding: 6px 12px;
+  padding: 6px 16px;
   gap: 16px;
   max-width: calc(100% - 40px); /* sécurité */
   overflow: visible; /* empêche le débordement */
