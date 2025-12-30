@@ -27,7 +27,7 @@ import bcg12 from "../images/bcg12.jpg";
 
 export const profile = {
   name: "Mansour Samb",
-  title: "Full Stack Developer",
+  title: "Frontend Developer",
   bio: "Développeur passionné avec une expertise en React, Node.js et bases de données.",
   profileImage: profilePic,
   avatar: avatar,
@@ -43,96 +43,100 @@ export const projects = [
     id: 1,
     title: "Project One",
     image: bcg1,
-    description: "Prototype d'interface utilisateur responsive.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    description: "Démarrez votre formation d'Intégrateur Web.",
+    tech: ["Bureautique", "HTML", "CSS"],
     url: "#",
   },
   {
     id: 2,
     title: "Project Two",
     image: bcg2,
-    description: "Application single-page avec interactions dynamiques.",
-    tech: ["React", "Vite"],
+    description: "Premiers pas sur le langage HTML.",
+    tech: ["HTML", "CSS"],
     url: "#",
   },
   {
     id: 3,
     title: "Project Three",
     image: bcg3,
-    description: "Dashboard analytique avec graphiques.",
-    tech: ["React", "Chart.js"],
+    description:
+      "Créez la page d'accueil d'une agence de voyage avec HTML & CSS.",
+    tech: ["HTML", "CSS"],
     url: "#",
   },
   {
     id: 4,
     title: "Project Four",
     image: bcg4,
-    description: "Landing page marketing optimisée SEO.",
-    tech: ["HTML", "Tailwind"],
+    description:
+      "Améliorez l'interface d'un site mobile avec des animations CSS.",
+    tech: ["HTML", "Saas", "Animations", "Figma"],
     url: "#",
   },
   {
     id: 5,
     title: "Project Five",
     image: bcg5,
-    description: "Prototype e‑commerce avec panier.",
-    tech: ["React", "Node.js", "Express"],
+    description: "Premiers pas sur le langage JavaScript.",
+    tech: ["JavaScript", "Figma", "CSS"],
     url: "#",
   },
   {
     id: 6,
     title: "Project Six",
     image: bcg6,
-    description: "Application mobile web-first (PWA).",
-    tech: ["React", "Service Worker"],
+    description: "Créez une page web dynamique avec JavaScript.",
+    tech: ["Node.js", "Express", "API", "Swagger"],
     url: "#",
   },
   {
     id: 7,
     title: "Project Seven",
     image: bcg7,
-    description: "Intégration API tierce pour données en temps réel.",
-    tech: ["Node.js", "Socket.io"],
+    description:
+      "Créez une application web de location immobilière avec React.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "React"],
     url: "#",
   },
   {
     id: 8,
     title: "Project Eight",
     image: bcg8,
-    description: "Refonte UI et amélioration accessibilité.",
-    tech: ["HTML", "ARIA"],
+    description: "Optimisez le référencement d'un site de photographe.",
+    tech: ["SEO", "Performance", "Accessibility"],
     url: "#",
   },
   {
     id: 9,
     title: "Project Nine",
     image: bcg9,
-    description: "Micro‑service pour traitement d'images.",
-    tech: ["Node.js", "Sharp"],
+    description: "Débuggez le site d'une agence d'événementiel.",
+    tech: ["Node.js", "React", "Debugging"],
     url: "#",
   },
   {
     id: 10,
     title: "Project Ten",
     image: bcg10,
-    description: "Dashboard d'administration sécurisé.",
-    tech: ["React", "Auth"],
+    description:
+      "Implémentez le front-end d'une application bancaire avec React.",
+    tech: ["React", "Redux", "API"],
     url: "#",
   },
   {
     id: 11,
     title: "Project Eleven",
     image: bcg11,
-    description: "Prototype d'animation et transitions avancées.",
-    tech: ["CSS", "GSAP"],
+    description: "Planifiez le développement du site de votre client.",
+    tech: ["Notion", "Figma", "Feedly"],
     url: "#",
   },
   {
     id: 12,
     title: "Project Twelve",
     image: bcg12,
-    description: "Site vitrine statique optimisé performance.",
-    tech: ["HTML", "Netlify"],
+    description: "Créez et publiez votre portfolio de développeur.",
+    tech: ["React", "Seo", "GitHub Pages"],
     url: "#",
   },
 ];
@@ -200,117 +204,257 @@ export const courses = [
     projectTitle: "Projet 1: Bureautique",
     courses: [
       {
-        name: "Introduction à la bureautique",
+        name: "Planification et gestion documentaire",
         description:
           "Maîtrise de Word, Excel et PowerPoint pour la gestion documentaire professionnelle.",
         icon: FaMicrosoft,
-        duration: "40 hours",
-        completion: 95,
-      },
-      {
-        name: "Création de documents avec Word",
-        description:
-          "Mise en place de documents texte professionnels, mise en forme avancée et styles.",
-        icon: FaMicrosoft,
-        duration: "10 hours",
-        completion: 75,
+        duration: "23 hours",
+        completion: 100,
       },
     ],
   },
   {
     id: 2,
-    projectTitle: "Projet 2: HTML & CSS",
+    projectTitle: "Projet 2: HTML",
     courses: [
       {
         name: "Création de site Nina Carducci",
         description:
-          "Conception et optimisation SEO d'un site e-commerce avec structure sémantique HTML5.",
+          "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML et CSS.",
         icon: SiHtml5,
-        duration: "40 hours",
-        completion: 25, // 75% terminé
+        duration: "20 hours",
+        completion: 75, // 75% terminé
       },
     ],
   },
   {
     id: 3,
-    projectTitle: "Projet 3: JavaScript",
+    projectTitle: "Projet 3: HTML & CSS",
     courses: [
       {
-        name: "Introduction à la programmation",
+        name: "Création de site Booky",
         description:
-          "Fondamentaux du JavaScript, DOM manipulation et ES6+ pour interactivité web.",
+          "Implémenter une interface responsive avec HTML et CSS pour une agence de voyage.",
+        icon: SiJavascript,
+        duration: "20 hours",
+        completion: 100, // 75% terminé
+      },
+      {
+        name: "Création de site Booky",
+        description: "Installer un environnement de développement front-end.",
+        icon: SiJavascript,
+        duration: "20 hours",
+        completion: 100, // 75% terminé
+      },
+      {
+        name: "Création de site Booky",
+        description:
+          "Intégrer du contenu conformément à une maquette avec HTML et CSS.",
         icon: SiJavascript,
         duration: "40 hours",
-        completion: 15, // 75% terminé
+        completion: 80, // 75% terminé
       },
     ],
   },
   {
     id: 4,
-    projectTitle: "Projet 4: React Avancé",
+    projectTitle: "Projet 4: Animations CSS",
     courses: [
       {
-        name: "Développement d'applications SPA",
+        name: "Foodtech Mobile First",
         description:
-          "Composants, hooks, state management et patterns avancés en React.",
+          "Implémentez le site d’une foodtech en mobile first et ses animations CSS avec Sass..",
+        icon: SiReact,
+        duration: "60 hours",
+        completion: 50,
+      },
+      {
+        name: "Foodtech Mobile First",
+        description: "Intégrer une maquette en mobile-first.",
+        icon: SiReact,
+        duration: "20 hours",
+        completion: 100,
+      },
+      {
+        name: "Foodtech Mobile First",
+        description:
+          "Mettre en œuvre des animations CSS ,Versionner son projet avec Git et Github",
         icon: SiReact,
         duration: "40 hours",
-        completion: 45,
+        completion: 70,
       },
     ],
   },
   {
     id: 5,
-    projectTitle: "Projet 5: Node.js API",
+    projectTitle: "Projet 5: JavaScript",
     courses: [
       {
-        name: "Création d'API RESTful",
-        description:
-          "Serveurs backend robustes, gestion des requêtes et middlewares avec Express.",
+        name: " Carrousel du site Internet d’une imprimerie ",
+        description: "Programmer en utilisant les fondamentaux de JavaScript.",
         icon: SiNodedotjs,
-        duration: "30 hours",
-        completion: 75,
+        duration: "20 hours",
+        completion: 100,
       },
     ],
   },
   {
     id: 6,
-    projectTitle: "Projet 6: MongoDB & Mongoose",
+    projectTitle: "Projet 6: JavaScript",
     courses: [
       {
-        name: "Bases de données NoSQL",
+        name: "Api dynamique pour une architecte",
         description:
-          "Schémas flexibles, requêtes complexes et optimisation avec MongoDB.",
+          "Aidez votre équipe à finaliser le nouveau site internet d’une architecte grâce à la création d’un site dynamique avec JavaScript, communiquant avec une API.",
         icon: SiMongodb,
-        duration: "25 hours",
+        duration: "60 hours",
+        completion: 65,
+      },
+      {
+        name: "Api dynamique pour une architecte",
+        description:
+          "Récupérer les données utilisateurs dans le JavaScript via des formulaires.Gérer les événements utilisateurs avec JavaScript.Manipuler les éléments du DOM avec JavaScript.",
+
+        icon: SiMongodb,
+        duration: "60 hours",
         completion: 65,
       },
     ],
   },
   {
     id: 7,
-    projectTitle: "Projet 7: Docker",
+    projectTitle: "Projet 7: React",
     courses: [
       {
-        name: "Containerisation et déploiement",
+        name: "Kasa, une application de location de logements",
         description:
-          "Création d'images Docker, orchestration et CI/CD pour applications.",
+          "Implémentez le front end de Kasa, une application de location de logements. Mettez en place des composants avec React et les routes de l'application avec React Router.",
         icon: SiDocker,
-        duration: "20 hours",
+        duration: "60 hours",
+        completion: 85,
+      },
+      {
+        name: "Kasa",
+        description:
+          "Initialiser une application avec Create React App.Configurer la navigation entre les pages de l'application avec React Router.",
+        icon: SiDocker,
+        duration: "60 hours",
+        completion: 85,
+      },
+      {
+        name: "Kasa",
+        description:
+          "Développer des éléments de l'interface d'un site web grâce à des composants React.Mettre en œuvre des animations CSS.Mettre en œuvre des animations CSS.",
+        icon: SiDocker,
+        duration: "60 hours",
         completion: 85,
       },
     ],
   },
   {
     id: 8,
-    projectTitle: "Projet 8: Git & GitHub",
+    projectTitle: "Projet 8: SEO",
     courses: [
       {
-        name: "Versioning et collaboration",
-        description:
-          "Maîtrise du contrôle de version, branching, pull requests et workflows collaboratifs.",
+        name: "Optimisez le référencement d'un site de photographe",
+        description: "Optimiser la performance d'un site web.",
         icon: SiGit,
-        duration: "15 hours",
+        duration: "40 hours",
+        completion: 90,
+      },
+    ],
+  },
+  {
+    id: 9,
+    projectTitle: "Projet 9: Debuggage",
+    courses: [
+      {
+        name: "Agence 724events.",
+        description:
+          "Prenez le relais d’un autre développeur pour débugger le site de l’agence 724events.",
+        icon: SiGit,
+        duration: "60 hours",
+        completion: 70,
+      },
+      {
+        name: "724events.",
+        description:
+          "Débugger un site web grâce aux Chrome DevTools.Rédiger un cahier de recette pour tester un site.",
+        icon: SiGit,
+        duration: "60 hours",
+        completion: 60,
+      },
+    ],
+  },
+  {
+    id: 10,
+    projectTitle: "Projet 10: Redux",
+    courses: [
+      {
+        name: "Argent Bank",
+        description:
+          "Complétez le code de l'application bancaire Argent Bank avec React et Redux. Vous écrivez des appels à l'API REST pour connecter le front au back, et vous modéliserez une API.",
+        icon: SiGit,
+        duration: "80 hours",
+        completion: 70,
+      },
+      {
+        name: "Argent Bank",
+        description:
+          "Afficher les données du back end sur l'interface via des appels API.Configurer des routes API pour la communication client / serveur.",
+        duration: "80 hours",
+        completion: 30,
+      },
+      {
+        name: "Argent Bank",
+        description:
+          "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front-end.",
+        icon: SiGit,
+        duration: "80 hours",
+        completion: 70,
+      },
+    ],
+  },
+  {
+    id: 11,
+    projectTitle: "Projet 11: Planning",
+    courses: [
+      {
+        name: "Planifiez le développement du site de votre client",
+        description:
+          "Présenter la solution technique.Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels.",
+        icon: SiGit,
+        duration: "60 hours",
+        completion: 10,
+      },
+      {
+        name: "Planifiez le développement du site de votre client",
+        description:
+          "Découper une fonctionnalité en tâches pour préparer le développement.Mettre en place une méthode de veille technologique adaptée .",
+        icon: SiGit,
+        duration: "20 hours",
+        completion: 10,
+      },
+      {
+        name: "Planifiez le développement du site de votre client",
+        description:
+          "Suivre le déroulement du projet grâce à un outil de gestion de projet.",
+        icon: SiGit,
+        duration: "30 hours",
+        completion: 10,
+      },
+    ],
+  },
+  {
+    id: 12,
+    projectTitle: "Projet 12: Portfolio",
+    courses: [
+      {
+        name: "Créez et publiez votre portfolio de développeur",
+        description:
+          "Débuggez votre portfolio et optimisez la performance du code et du référencement SEO avant de le déployer en ligne afin de donner de la visibilité à vos projets.Déployer un site statique en ligne. Merci de votre attention.",
+        icon: SiGit,
+        duration: "40 hours",
         completion: 90,
       },
     ],
