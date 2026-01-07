@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.css";
-// Using anchor links for single-page navigation
 import { IoIosMenu } from "react-icons/io";
+import profilepic from "../assets/profilepic.jpg"; // ← AJOUT
+
 function Nav() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(() => {
@@ -11,23 +12,20 @@ function Nav() {
       return "home";
     }
   });
-  /*window.location.hash modifie l’URL : bon pour le partage/SEO basique et navigation historique.
-classList est immédiat et local : utile pour animations temporaires, toggles JS.
-Si vous changez le hash programmatique (window.location.hash = 'x'), le navigateur ajoute une entrée dans l’historique — attention aux retours utilisateur.
-Pour un site en React, synchroniser hash → state → className est la solution propre.
-Conclusion courte  ;  add classlist: local*/
 
   useEffect(() => {
     const onHash = () => setActive(window.location.hash.slice(1) || "home");
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
+
   return (
     <div className="nav">
       <div className="logo">
         <div className="alif"></div>
         <span className="ba"></span>
       </div>
+
       <div id="nav-links" className={`links ${open ? "open" : ""}`}>
         <ul>
           <li onClick={() => setOpen(false)}>
@@ -39,6 +37,7 @@ Conclusion courte  ;  add classlist: local*/
               Home
             </a>
           </li>
+
           <li onClick={() => setOpen(false)}>
             <a
               href="#about"
@@ -48,6 +47,7 @@ Conclusion courte  ;  add classlist: local*/
               About
             </a>
           </li>
+
           <li onClick={() => setOpen(false)}>
             <a
               href="#portfolio"
@@ -57,6 +57,7 @@ Conclusion courte  ;  add classlist: local*/
               Portfolio
             </a>
           </li>
+
           <li onClick={() => setOpen(false)}>
             <a
               href="#courses"
@@ -66,6 +67,7 @@ Conclusion courte  ;  add classlist: local*/
               Courses
             </a>
           </li>
+
           <li onClick={() => setOpen(false)}>
             <a
               href="#contact"
@@ -77,7 +79,8 @@ Conclusion courte  ;  add classlist: local*/
           </li>
         </ul>
       </div>
-      {/* Hamburger for small screens */}
+
+      {/* Hamburger */}
       <button
         className="hamburger"
         aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
@@ -91,6 +94,13 @@ Conclusion courte  ;  add classlist: local*/
       <a className="button__contact" href="#contact">
         Contactez moi
       </a>
+      {/* Avatar ajouté ici */}
+      <img
+        src={profilepic}
+        alt="Profile"
+        className="nav__avatar"
+        onClick={() => setOpen(false)}
+      />
     </div>
   );
 }

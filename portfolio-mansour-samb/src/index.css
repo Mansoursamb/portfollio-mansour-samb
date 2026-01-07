@@ -16,7 +16,7 @@
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: "Shrikhand", cursive;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 
   background-image: url("./images/solide2.png");
