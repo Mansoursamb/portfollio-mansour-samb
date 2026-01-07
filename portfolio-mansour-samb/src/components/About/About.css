@@ -1,13 +1,18 @@
 .about {
-  padding: 83px 24px 40px 24px; /* no extra nav offset needed; sections flow naturally */
-  max-width: 1400px; /* allows 500px image + text to display side-by-side */
-  margin: 0 auto;
   display: flex;
-  gap: 40px;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 0;
+  align-items: center; /* centre verticalement */
+  gap: 40px;
+  width: 100%;
+  min-height: 600px; /* donne un vrai espace pour centrer */
 }
+.about__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* aligne le texte verticalement */
+  padding: 20px;
+}
+
 .about h2 {
   font-size: 50px;
   margin-bottom: 8px;
@@ -19,23 +24,47 @@
 .about > div {
   flex: 1 1 auto; /* the text/content grows/shrinks, image remains fixed */
 }
-.about .avatar-image {
-  display: block;
-  width: 500px; /* keep the avatar at 500px on large screens */
+
+/* Carte 3D */
+.flip-card {
+  width: 500px;
   height: 500px;
-  flex: 0 0 500px; /* prevent the image from shrinking */
-  min-width: 500px; /* ensure it doesn't go below this width */
-  max-width: 100%; /* never overflow its container */
-  object-fit: cover; /* crop to fill while maintaining aspect ratio */
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 2 / 1; /* ✔️ garantit un carré parfait */
+  margin: 0 auto;
   cursor: pointer;
+  padding-right: 20px;
+  padding-top: 25px;
 }
-.about .avatar-image:hover {
-  transform: rotate(20deg);
-  transition: transform 0.3s ease-in-out;
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
 }
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+} /* Faces */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+
+  backface-visibility: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+.about .button {
+  align-self: center;
+  margin-top: 20px;
+}
+/* Responsive */
+
 /* Responsive: stack columns under 1200px, scale image
    Keep the 500px size on large screens, smaller on smaller screens */
 @media screen and (max-width: 1200px) {
@@ -44,12 +73,7 @@
     text-align: center;
     padding-top: 10px;
   }
-  .about .avatar-image {
-    width: 350px;
-    height: 350px;
-    flex: 0 0 350px;
-    min-width: 350px;
-  }
+
   .about > div {
     flex: none;
   }
@@ -65,18 +89,14 @@
 
 @media screen and (max-width: 768px) {
   .about {
-    width: 80%;
+    width: 100%;
     flex-direction: column;
-
+    align-items: center;
     gap: 16px;
-    margin: 0;
-    padding: 80px 16px 40px 60px; /* reduce horizontal padding */
+    margin: 0 auto;
   }
-  .about .avatar-image {
-    width: 200px;
-    height: 200px;
-    flex: 0 0 200px;
-    min-width: 200px;
+  .about__text {
+    padding-top: 50px;
   }
   .about > div {
     flex: none;
@@ -88,16 +108,16 @@
     font-size: 30px;
   }
 }
-
-@media screen and (max-width: 296px) {
-  .about {
-    gap: 12px;
+@media screen and (max-width: 568px) {
+  .flip-card {
+    width: 300px;
+    height: 300px;
   }
-  .about .avatar-image {
-    width: 140px;
-    height: 140px;
-    flex: 0 0 140px;
-    min-width: 140px;
+}
+@media screen and (max-width: 400px) {
+  .about {
+    min-height: auto;
+    padding: 10px;
   }
   .about p {
     font-size: 16px;
