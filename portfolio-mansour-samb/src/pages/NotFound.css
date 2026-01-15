@@ -1,0 +1,24 @@
+.notfound {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.notfound h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #ff4d4d;
+}
+
+.notfound__btn {
+  padding: 12px 25px;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}

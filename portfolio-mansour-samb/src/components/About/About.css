@@ -40,7 +40,8 @@
 }
 
 .flip-card:hover {
-  transform: rotate(25deg);
+  transform: rotate(10deg);
+  transition: all 0.3s ease;
 }
 .flip-inner {
   width: 100%;
