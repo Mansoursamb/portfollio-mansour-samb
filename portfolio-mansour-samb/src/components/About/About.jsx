@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
-import avatar from "../../assets/viel homme.png.png";
-import profilepic from "../../assets/profilepic.jpg";
+import avatar from "../../assets/viel hommesmall.webp";
+import profilepic from "../../assets/profilepicsmall.webp";
 import cv from "../../assets/cvmansor.pdf";
 
 const About = () => {
@@ -31,8 +31,25 @@ const About = () => {
         onClick={() => setFlipped(!flipped)}
       >
         <div className="flip-inner">
-          <img src={avatar} alt="Avatar" className="flip-front" />
-          <img src={profilepic} alt="Profile" className="flip-back" />
+          <img
+            src={avatar}
+            alt="Portrait de Mans"
+            className="flip-front"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="400"
+          />
+
+          <img
+            src={profilepic}
+            alt="Photo de profil de Mans"
+            className="flip-back"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="400"
+          />
         </div>
       </div>
     </section>
