@@ -43,7 +43,6 @@ const COLORS = {
 };
 
 const Hero = () => {
-  console.log("Hero render", new Date().toISOString());
   // Simplified: render React icons directly (no CSS var images)
 
   return (

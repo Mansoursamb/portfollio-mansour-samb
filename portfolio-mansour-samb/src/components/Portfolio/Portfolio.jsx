@@ -3,7 +3,6 @@ import "./Portfolio.css";
 import { projects } from "../../assets/assets.js";
 
 const Portfolio = () => {
-  console.log("Portfolio render", new Date().toISOString());
   return (
     <section className="portfolio" id="portfolio">
       <h2>Portfolio</h2>
