@@ -4,7 +4,7 @@ import profilepic from "../../assets/profilepicsmall.webp";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="footer__left">
         <img src={profilepic} alt="Profile" className="footer__avatar" />
         <h3>Mansor Samb</h3>

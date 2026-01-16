@@ -4,7 +4,7 @@
   align-items: center; /* centre verticalement */
   gap: 40px;
   width: 100%;
-  min-height: 600px; /* donne un vrai espace pour centrer */
+  min-height: 400px; /* donne un vrai espace pour centrer */
 }
 .about__text {
   display: flex;
@@ -14,12 +14,12 @@
 }
 
 .about h2 {
-  font-size: 50px;
+  font-size: 36px;
   margin-bottom: 8px;
 }
 .about p {
   color: var(--secondary);
-  font-size: 50px;
+  font-size: 28px;
 }
 .about > div {
   flex: 1 1 auto; /* the text/content grows/shrinks, image remains fixed */
@@ -27,8 +27,8 @@
 
 /* Carte 3D */
 .flip-card {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   aspect-ratio: 2 / 1; /* ✔️ garantit un carré parfait */
   margin: 0 auto;
   cursor: pointer;

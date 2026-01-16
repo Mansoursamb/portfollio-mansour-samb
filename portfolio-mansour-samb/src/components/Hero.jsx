@@ -46,9 +46,14 @@ const Hero = () => {
   // Simplified: render React icons directly (no CSS var images)
 
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
+      <h1 className="hero-title">
+        Développeur Front‑End & Créateur d’expériences web
+      </h1>
+
       <h2>Technologies</h2>
       <p>Icônes des technologies — rendues avec react-icons (SVG)</p>
+
       <div className="icons-grid">
         {ICONS.map(({ name, component }) => {
           const Comp = component;

@@ -39,6 +39,9 @@ body {
   padding: 0;
   overflow-x: hidden; /* important sur html AUSSI */
 }
+body {
+  background-image: none !important;
+}
 
 html {
   scroll-behavior: smooth;
@@ -49,20 +52,37 @@ main {
   flex-direction: column;
 }
 
-#hero {
-  order: 2;
-}
-
+/* Ordre visuel */
 #about {
   order: 1;
+
+  outline: 10px solid green;
 }
 
-main {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+#hero {
+  order: 2;
+  min-height: 65vh;
+  background-color: white;
 }
+
+#portfolio {
+  order: 3;
+}
+
+#courses {
+  order: 4;
+}
+
+#contact {
+  order: 5;
+}
+
+#footer {
+  order: 6;
+}
+
 section {
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   max-width: 100%;

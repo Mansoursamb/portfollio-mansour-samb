@@ -8,7 +8,7 @@ const About = () => {
   const [flipped, setFlipped] = useState(false);
 
   return (
-    <section className="about" id="about">
+    <section id="about" className="about">
       <div className="about__text">
         <h2>À propos</h2>
         <p>

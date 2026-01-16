@@ -4,7 +4,7 @@ import { projects } from "../../assets/assets.js";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio" id="portfolio">
+    <section id="portfolio" className="portfolio">
       <h2>Portfolio</h2>
       <div className="projects-grid">
         {projects.map((p) => (

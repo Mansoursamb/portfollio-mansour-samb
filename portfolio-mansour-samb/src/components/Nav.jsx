@@ -20,7 +20,7 @@ function Nav() {
   }, []);
 
   return (
-    <div className="nav">
+    <div id="nav" className="nav">
       <div className="logo">
         <div className="alif"></div>
         <span className="ba"></span>

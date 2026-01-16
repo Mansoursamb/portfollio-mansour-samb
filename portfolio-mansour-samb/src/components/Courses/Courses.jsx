@@ -21,7 +21,7 @@ export const Courses = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section className="courses" id="courses">
+    <section id="courses" className="courses">
       <h2>Mes Compétences</h2>
       <p>Les projets et Cours que j'ai suivi</p>
 
