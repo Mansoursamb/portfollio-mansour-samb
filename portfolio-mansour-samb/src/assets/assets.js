@@ -10,8 +10,8 @@ import {
 } from "react-icons/si";
 import { FaMicrosoft } from "react-icons/fa";
 
-import avatar from "./viel homme.png.png";
-import profilePic from "../images/profile-placeholder.svg";
+import avatar from "./viel hommesmall.webp";
+import profilePic from "../assets/profilepicsmall.webp";
 import bcg1 from "../images/bcg1.jpg";
 import bcg2 from "../images/bcg2.png";
 import bcg3 from "../images/bcg3.webp";
@@ -140,63 +140,6 @@ export const projects = [
     url: "#",
   },
 ];
-export const skills = [
-  {
-    name: "JavaScript",
-    level: "Advanced",
-    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
-  },
-  {
-    name: "React",
-    level: "Advanced",
-    icon: "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
-  },
-  {
-    name: "Node.js",
-    level: "Intermediate",
-    icon: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
-  },
-  {
-    name: "Python",
-    level: "Intermediate",
-    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
-  },
-];
-export const experiences = [
-  {
-    role: "Frontend Developer",
-    company: "Tech Solutions",
-    duration: "Jan 2022 - Present",
-    description: "Développement d'interfaces utilisateur réactives.",
-    tech: ["React", "Redux", "CSS"],
-  },
-  {
-    role: "Backend Developer",
-    company: "Web Services Inc.",
-    duration: "Jun 2020 - Dec 2021",
-    description: "Création d'API RESTful et gestion de bases de données.",
-    tech: ["Node.js", "Express", "MongoDB"],
-  },
-];
-export const testimonials = [
-  {
-    name: "Alice Dupont",
-    feedback: "Travail exceptionnel et communication fluide.",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jean Martin",
-    feedback: "Respect des délais et qualité au rendez-vous.",
-    avatar: "https://randomuser.me/api/portraits/men/46.jpg",
-  },
-];
-export const socialLinks = {
-  github: "",
-  linkedin: "",
-  twitter: "",
-  facebook: "",
-  instagram: "",
-};
 
 export const courses = [
   {

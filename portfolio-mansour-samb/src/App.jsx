@@ -33,8 +33,8 @@ function App() {
   // 👉 Sinon on affiche TOUT (one‑page)
   return (
     <main>
-      <About />
       <Hero />
+      <About />
       <Portfolio />
       <Courses />
       <Contact />

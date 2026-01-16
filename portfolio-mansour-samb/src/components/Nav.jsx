@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.css";
 import { IoIosMenu } from "react-icons/io";
-import profilepic from "../assets/profilepic.jpg"; // ← AJOUT
+import profilepic from "../assets/profilepicsmall.webp"; // ← AJOUT
 
 function Nav() {
   const [open, setOpen] = useState(false);

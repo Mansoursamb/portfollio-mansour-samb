@@ -45,6 +45,19 @@ html {
   /* Ensure anchor links account for fixed nav height */
 }
 main {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  order: 2;
+}
+
+#about {
+  order: 1;
+}
+
+main {
   display: block;
   margin: 0 auto;
   text-align: center;

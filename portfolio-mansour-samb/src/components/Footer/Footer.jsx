@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import profilepic from "../../assets/profilepic.jpg";
+import profilepic from "../../assets/profilepicsmall.webp";
 
 export default function Footer() {
   return (
